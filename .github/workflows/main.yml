@@ -1,17 +1,10 @@
-name: Custom Action
+name: Email Check
 
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+on: [push, workflow_dispatch]
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
       - name: 24f2002015@ds.study.iitm.ac.in
-        run: echo "Step with my email address"
+        run: echo "Hello, world!"
